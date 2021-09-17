@@ -2,17 +2,42 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "sample-webpart-web-part": {
+    "js-web-part-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/sampleWebpart/SampleWebpartWebPart.js",
-          "manifest": "./src/webparts/sampleWebpart/SampleWebpartWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/jsWebPart/JsWebPartWebPart.js",
+          "manifest": "./src/webparts/jsWebPart/JsWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "project-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectDashboard/ProjectDashboardWebPart.js",
+          "manifest": "./src/webparts/projectDashboard/ProjectDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "poke-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pokeData/PokeDataWebPart.js",
+          "manifest": "./src/webparts/pokeData/PokeDataWebPart.manifest.json"
         }
       ]
     }
   },
-  "externals": {},
+  "externals": {
+    "jquery": {
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.6/jquery.min.js",
+      "globalName": "jQuery"
+    }
+  },
   "localizedResources": {
-    "SampleWebpartWebPartStrings": "lib/webparts/sampleWebpart/loc/{locale}.js"
+    "SampleWebpartWebPartStrings": "lib/webparts/sampleWebpart/loc/{locale}.js",
+    "GetDataWebPartStrings": "lib/webparts/getData/loc/{locale}.js",
+    "JsWebPartWebPartStrings": "lib/webparts/jsWebPart/loc/{locale}.js",
+    "ProjectDashboardWebPartStrings": "lib/webparts/projectDashboard/loc/{locale}.js",
+    "PokeDataWebPartStrings": "lib/webparts/pokeData/loc/{locale}.js"
   }
 }

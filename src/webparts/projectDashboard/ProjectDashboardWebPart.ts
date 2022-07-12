@@ -23,7 +23,7 @@ export default class ProjectDashboardWebPart extends BaseClientSideWebPart<IProj
       ProjectDashboard,
       {
         description: this.properties.description,
-        context: this.properties.context
+        context: this.context
       }
     );
 
@@ -34,9 +34,11 @@ export default class ProjectDashboardWebPart extends BaseClientSideWebPart<IProj
     ReactDom.unmountComponentAtNode(this.domElement);
   }
 
+  /* 
   protected get dataVersion(): Version {
     return Version.parse('1.0');
   }
+  */
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     return {

@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.10.0",
+    "libraryName": "video-player",
+    "libraryId": "9d596526-cff9-490d-b049-a03d4b628bc8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": true,
+    "isDomainIsolated": true,
+    "componentType": "webpart"
+  }
+}

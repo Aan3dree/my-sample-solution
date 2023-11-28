@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "video-player-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/videoPlayer/VideoPlayerWebPart.js",
+          "manifest": "./src/webparts/videoPlayer/VideoPlayerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "VideoPlayerWebPartStrings": "lib/webparts/videoPlayer/loc/{locale}.js"
+  }
+}

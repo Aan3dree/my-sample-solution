@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "video-player-client-side-solution",
+    "id": "9d596526-cff9-490d-b049-a03d4b628bc8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": true
+  },
+  "paths": {
+    "zippedPackage": "solution/video-player.sppkg"
+  }
+}

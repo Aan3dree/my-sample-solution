@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "score-panel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/scorePanel/ScorePanelWebPart.js",
+          "manifest": "./src/webparts/scorePanel/ScorePanelWebPart.manifest.json"
+        }
+      ]
+    },
+    "property-bag-rating-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/propertyBagRating/PropertyBagRatingWebPart.js",
+          "manifest": "./src/webparts/propertyBagRating/PropertyBagRatingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ScorePanelWebPartStrings": "lib/webparts/scorePanel/loc/{locale}.js",
+    "PropertyBagRatingWebPartStrings": "lib/webparts/propertyBagRating/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

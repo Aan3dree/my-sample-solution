@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.12.1",
+    "libraryName": "poc-rating",
+    "libraryId": "85e5f84c-8ce8-4b66-8ed8-32e131d4093c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": false,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
